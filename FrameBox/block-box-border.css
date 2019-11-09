@@ -1,0 +1,11 @@
+.box_border{
+	padding:20px;
+	margin-top:20px;
+	font-weight: bold;
+	background: #FFF;
+	border: solid 2px #E5E5E5;/*線*/
+}
+.box_border p {
+	margin: 0; 
+	padding: 0;
+}

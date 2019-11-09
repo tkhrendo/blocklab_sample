@@ -1,0 +1,26 @@
+/*括弧ボックス*/
+.box_brackets{
+	position:relative;
+	padding:20px;
+	margin-top:20px;
+}
+.box_brackets:before,
+.box_brackets:after {
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: "";
+}
+.box_brackets:before {
+    top: 0;
+    left: 0;
+    border-top: solid 2px #6091d3;
+    border-left: solid 2px #6091d3;
+}
+.box_brackets:after {
+    right: 0;
+    bottom: 0;
+    border-right: solid 2px #6091d3;
+    border-bottom: solid 2px #6091d3;
+}
