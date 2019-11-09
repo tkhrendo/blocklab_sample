@@ -1,0 +1,46 @@
+.box-point-red {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #ff4646;
+    border-radius: 8px;
+}
+.box-point-red .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #FFF;
+    color: #ff4646;
+    font-weight: bold;
+}
+.box-point-red p {
+    margin: 0; 
+    padding: 0;
+}
+.box-point-blue {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #0062a0;
+    border-radius: 8px;
+}
+.box-point-blue .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #FFF;
+    color: #0062a0;
+    font-weight: bold;
+}
+.box-point-blue p {
+    margin: 0; 
+    padding: 0;
+}
