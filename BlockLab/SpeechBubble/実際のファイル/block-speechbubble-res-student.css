@@ -6,7 +6,7 @@
 
 .balloon_right .faceicon {
   float: right;
-  margin-right: 90px;
+  margin-right: 10px;
   width: 80px;
 }
 
@@ -21,7 +21,7 @@
   width: 100%;
 }
 
-.says {
+.says_right {
   display: inline-block;
   position: relative; 
   margin: 5px 20px 0px 0px;
@@ -31,7 +31,7 @@
   float: right;
 }
 
-.says:after {
+.says_right:after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -41,7 +41,7 @@
   border-left: 12px solid #d7ebfe;
 }
 
-.says p {
+.says_right p {
   margin: 0;
   padding: 0;
 }

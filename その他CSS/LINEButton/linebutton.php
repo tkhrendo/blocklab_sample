@@ -1,0 +1,1 @@
+<a href="#" class="btn-line">友達申請する</a>

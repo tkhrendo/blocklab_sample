@@ -1,0 +1,21 @@
+.box_withTitle {
+  margin: 0px auto;
+  background: #f4dddf;
+  border-radius: 10px;
+  display: block;
+  width: 80%;
+}
+.box_withTitle .box-title {
+  font-size: 1.2em;
+  background: #CC2C37;
+  padding: 4px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  border-radius: 10px 10px 0 0;
+}
+.box_withTitle p {
+  padding: 15px 20px;
+  margin: 0;
+}

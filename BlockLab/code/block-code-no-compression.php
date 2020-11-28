@@ -1,0 +1,1 @@
+<pre class="wp-block-code"><code><?php echo block_field('code'); ?></code></pre>

@@ -1,0 +1,33 @@
+a.btn-twitter{
+  border: solid;
+  border-radius: 10px;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  margin: 10px 0;
+  display: inline-block;
+  color: #1da1f2;
+  background: #fff;
+  font-weight: bold;
+  font-size:16px;
+  text-align:center;
+  text-decoration:none !important;
+}
+a.btn-twitter:hover {
+  border-radius: 10px;
+  background: #1da1f2;
+  color: #fff;
+}
+a.btn-twitter:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: -1px 3px 0 0;
+  background: url("https://blogger-youseijo.com/wp-content/uploads/2020/03/Twitter_Logo_Blue.svg") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+a.btn-twitter:hover:before {
+  background: url("https://blogger-youseijo.com/wp-content/uploads/2020/03/Twitter_Logo_WhiteOnBlue.svg") no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}

@@ -1,0 +1,108 @@
+  /*outline*/
+  .content .outline {
+    /* border(外枠設定): 線の太さ 線の種類 線の色 */
+    border: 2px solid #cc2c37;
+    padding: 10px 0 15px;
+    /* background: 背景色 */
+    background:#f7f3ed;
+  }
+  .content .outline__list{
+    list-style: none;
+  }
+  /*.content li ul li .outline__number: h3に該当する目次の番号設定*/
+  .content li ul li .outline__number{
+    /* display(番号の表示): noneは目次の番号を非表示にしています 
+    この記述を消すと、h3の箇所にも番号が表示されます*/
+    display: none;
+  }
+  /*目次の番号設定（段落関係なく全体共通）*/
+  .content .outline__number{
+    /*番号の色*/
+    color:#cc2c37;
+    width:2em;
+    height:2em;
+    padding:0;
+    line-height:2em;
+    text-align:center;
+    background:none;
+    font-family: 'Dosis', sans-serif;
+  }
+  .content .outline__link {
+    display: block;
+    /*見出しテキストの色*/
+    color:#777;
+  }
+  .content .outline__link:hover {
+    /*見出しテキストにマウスカーソルを当てた時の色*/
+    color: #cfcfcf;
+  }
+  /*頭の「目次」と書いてある箇所の設定*/
+  .outline__title {
+    color: #777;
+    font-weight: 700;
+    width:100%;
+    margin-left: 4%;
+  }
+  /*目次の開く,閉じるボタン*/
+  .content .outline__switch{
+    right:1.5rem;
+    top:10px;
+  }
+  /*目次の開く,閉じるボタンを押した時の変化*/
+  .content .outline__toggle:checked + .outline__switch::before {
+    /*開いている時は［ ▲ CLOSE ］を表示*/
+    content: "［ ▲ CLOSE ］";
+    /*文字色*/
+    color:#cc2c37;
+  }
+  .content .outline__toggle:checked + .outline__switch + .outline__list {
+    margin-top: 1rem;
+  }
+  .content .outline__switch::before {
+    /*閉じている時は［ ▼ OPEN ］を表示*/
+    content: "［ ▼ OPEN ］";
+    border: 0;
+    /* 文字色 */
+    color:#cc2c37;
+  }
+  .content .outline__switch + .outline__list {
+    background: transparent;
+  }
+  .content .outline__switch + ul.outline__list {
+    margin-left:0;
+    margin-right:0;
+    /* 目次を開いている時のタイトル下の点線の色 */
+    border-top:2px dotted #cfcfcf;
+  }
+  .content .outline__switch + .outline__list-2 li:first-child{
+    margin-top:2rem;
+  }
+  .content .outline__switch + .outline__list-2 li ul li:first-child{
+    margin-top:1rem;
+  }
+  .outline__list-2 > li > a{
+    font-weight:700;
+  }
+  .outline__title:before{
+    font-family: "icomoon";
+    content: "\e92f";
+    margin-right:3px;
+  }
+
+  /* 画面サイズで設定を微調整 */
+  @media only screen and (min-width: 992px){
+    .outline__list-2 > li > a{
+      font-weight:700;
+    }
+    .content .outline {
+      width:90%;
+      margin:3rem 5%;
+    }
+  }
+  /* 画面サイズで設定を微調整 */
+  @media only screen and (max-width: 991px){
+    .content .outline {
+      width:100%;
+      margin:3rem 0;
+    }
+  }

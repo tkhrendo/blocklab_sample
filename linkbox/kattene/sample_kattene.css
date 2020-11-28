@@ -1,0 +1,91 @@
+/* box */
+.kattene {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 901px)
+.kattene {
+    display: table;
+    width: 100%;
+}
+
+/* imgpart */
+.kattene__imgpart {
+    text-align: center;
+}
+.kattene__imgpart img {
+    -webkit-box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.8);
+    box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.8);
+    -o-box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.8);
+    -ms-box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.8);
+}
+@media screen and (min-width: 901px)
+.kattene__imgpart {
+    display: table-cell;
+    width: 20%;
+}
+
+/* info */
+@media screen and (min-width: 901px)
+.kattene__infopart {
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+    padding-left: 10px;
+    width: 80%;
+}
+.kattene__description {
+    font-size: 0.8em;
+}
+
+/* buttons */
+.kattene__btns {
+    width: 100%;
+    margin-top: 1.2em;
+}
+.kattene__btns:after {
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+    content: ".";
+}
+.kattene__btns>div {
+    float: left;
+    margin-bottom: 5px;
+}
+media screen and (min-width: 901px)
+.kattene__btns {
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+@media screen and (min-width: 901px)
+.kattene__btns.__four>div:not(:last-child) {
+    margin-right: 1%;
+}
+@media screen and (min-width: 901px)
+.kattene__btns.__four>div {
+    width: 24.25%;
+}
+
+/* button */
+.kattene__btns .btn {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* after */
+.kattene__btns:after {
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+    content: ".";
+}

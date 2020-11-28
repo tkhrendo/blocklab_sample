@@ -1,0 +1,97 @@
+/* box */
+.itemlink {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 901px) {
+    .itemlink {
+        display: table;
+        width: 90%;
+    }
+}
+
+/* imgpart */
+.itemlink_img {
+    text-align: center;
+}
+.itemlink_img img {
+    -webkit-box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.8);
+    -moz-box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.8);
+    box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.8);
+    -o-box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.8);
+    -ms-box-shadow: 0px 5px 15px -5px rgba(0,0,0,0.8);
+}
+@media screen and (min-width: 901px){
+    .itemlink_img {
+        display: table-cell;
+        width: 20%;
+    }
+}
+
+/* info */
+@media screen and (min-width: 901px){
+    .itemlink_info {
+        display: table-cell;
+        vertical-align: top;
+        position: relative;
+        padding-left: 10px;
+        width: 80%;
+    }
+}
+
+/* 考え中 */
+.kattene__description {
+    font-size: 0.8em;
+}
+
+/* buttons */
+.itemlink_buttons {
+    width: 100%;
+    margin-top: 1.2em;
+}
+.itemlink_buttons:after {
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+    content: ".";
+}
+.itemlink_buttons>div {
+    float: left;
+    margin-bottom: 5px;
+}
+@media screen and (min-width: 901px){
+    .itemlink_buttons {
+        position: absolute;
+        bottom: 0;
+        box-sizing: border-box;
+        padding-right: 10px;
+    }
+}
+@media screen and (min-width: 901px){
+    .itemlink_buttons>div:not(:last-child) {
+        margin-right: 1%;
+}}
+@media screen and (min-width: 901px){
+    .itemlink_buttons>div {
+        width: 24.25%;}
+}
+
+/* button */
+.itemlink_buttons .itemlink_button {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* after */
+.itemlink_buttons:after {
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+    content: ".";
+}

@@ -1,8 +1,9 @@
 /*括弧ボックス*/
 .box_brackets{
 	position:relative;
-	padding:20px;
-	margin-top:20px;
+    padding:20px;
+    margin: 0 auto;
+    display: inline-block;
 }
 .box_brackets:before,
 .box_brackets:after {
